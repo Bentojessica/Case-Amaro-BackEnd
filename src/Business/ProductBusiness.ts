@@ -43,11 +43,12 @@ export class ProductBusiness {
         const produtos = {
             idDoProduto: result[0]["id do produto"],
             nomeDoProduto: result[0]["nome do produto"],
-            preco: result[0]["preço"],
-            tamanho: result[0]["tamanho"],
-            tag: result.map((index) =>{
-                return {name: index.name, }
-            })
+            tamanho: result[0]["tamanho do produto"],
+            preco: result[0]["preço do produto"]
+        }
+
+        if(!produtos) {
+            throw new Error("There is no product")
         }
         
         return produtos
