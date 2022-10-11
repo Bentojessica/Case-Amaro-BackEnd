@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.productTagsIdRouter = exports.tagsRouter = exports.productRouter = void 0;
+const express_1 = require("express");
+const ProductController_1 = require("../Controller/ProductController");
+const ProductTagIdController_1 = require("../Controller/ProductTagIdController");
+const TagsController_1 = require("../Controller/TagsController");
+exports.productRouter = (0, express_1.Router)();
+exports.tagsRouter = (0, express_1.Router)();
+exports.productTagsIdRouter = (0, express_1.Router)();
+const productController = new ProductController_1.ProductController();
+const tagsController = new TagsController_1.TagsController();
+const productTagsIdController = new ProductTagIdController_1.ProductTagIdController();
+exports.productRouter.get("/:name", productController.getProductByNameController);
+exports.tagsRouter.get("/:name", tagsController.getTagByNameController);
+exports.productTagsIdRouter.get("/tag", productTagsIdController.getProduct_TagsByIdTagController);
+exports.productTagsIdRouter.get("/:id_product", productTagsIdController.getProduct_TagsByIdProductController);
+exports.productRouter.post("/create", productController.createProduct);
+exports.tagsRouter.post("/create", tagsController.createTag);
+exports.productTagsIdRouter.post("/insert", productTagsIdController.createProductTagId);
+//# sourceMappingURL=Router.js.map
