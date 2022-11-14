@@ -1,12 +1,15 @@
 # Case-Amaro-BackEnd
 
-*[Documentação](https://documenter.getpostman.com/view/17589376/UVeDtnec)*
-*[Deploy](https://case-amaro.onrender.com/)
+*[Documentação](https://documenter.getpostman.com/view/19889845/2s8YmEz6qn)*
+*[Deploy](https://case-amaro.onrender.com/)*
 
 ## Linguagens e ferramentas utilizadas:
 TYPESCRIPT
 NODE.JS
 MYSQL
+
+![tabelas](https://user-images.githubusercontent.com/84422472/201737689-9986576e-1f3c-4185-8f07-c6347f7b2df1.png)
+
 
 *Enunciado*
 
